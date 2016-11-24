@@ -181,7 +181,7 @@
 		<script src='box2d.js'></script>
 		<script src='Main.js'></script>
 		<script>
-			(function(defaults, $, window, document, undefined) {
+			(function(defaults, window, document, undefined) {
 				$.extend({
 					tabifySetup: function(options) {
 						return $.extend(defaults, options);
@@ -219,7 +219,7 @@
 			}({
 				property: 'value',
 				otherProperty: 'value'
-			}, jQuery, window, document));
+			}, window, document));
 			$('.tab-group').tabify();
 			var date1 = new Date('2015-5-14'); //开始时间
 			var date2 = new Date(); //结束时间
